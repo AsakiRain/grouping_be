@@ -3,7 +3,6 @@ package api
 import (
 	"fmt"
 	"grouping_be/util"
-	"log"
 	"net/http"
 	"os"
 	"path"
@@ -83,7 +82,7 @@ func ReadFile(ctx *gin.Context) {
 		})
 		return
 	}
-	log.Printf("文件中有 %d 个工作表：%v", len(sheets), sheets)
+	// log.Printf("文件中有 %d 个工作表：%v", len(sheets), sheets)
 
 	rows, err := file.GetRows(sheets[0])
 	if err != nil {

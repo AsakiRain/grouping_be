@@ -1,7 +1,6 @@
 package util
 
 import (
-	"log"
 	"regexp"
 )
 
@@ -33,6 +32,6 @@ func CleanRows(rows [][]string) [][]string {
 			result = append(result, row)
 		}
 	}
-	log.Println(result)
+	// log.Println(result)
 	return result
 }
